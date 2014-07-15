@@ -1,0 +1,43 @@
+-
+  name: LonelyPlanet.com
+  link:
+    href: http://lonelyplanet.com
+    title: lonelyplanet.com
+  dates: August 2013 - Present
+  description: "Senior Ruby developer working on processing data fom various APIs. Work involves processing houndreds of Gigabytes of data from extremely diverse sources, match &amp; merge algorithyms, as well as geospatial analysis."
+  keywords:
+    - Data aggregation
+    - Data normalisation
+    - Geospatial application
+-
+  name: RubyScore
+  link:
+    href: http://railsrumble.com/entries/392-rubyscore
+    title: rubyscore.com
+  dates: October 2013
+  description: Winner of Public Favourite prize of <a href="http://railsrumble.com/entries/winners">2013 RailsRumble Competition</a>. Application has been created from scratch within 48 hours.
+  keywords:
+    - Data scraping
+    - Rapid application development
+-
+  name: Likemind
+  link:
+    href: http://getlikemind.com
+    title: getlikemind.com
+  dates: August 2012 - July 2013
+  description: "Lead developer responsible for creating API for social iOs application. Project has been build from grounds–up, included designing databases, API, caching, and working directly with iOs developer."
+  keywords:
+    - JSON API
+    - Geolocation
+    - Background processing
+-
+  name: Stadtfragen for meinestadt.de
+  link:
+    href: http://fragen.meinestadt.de
+    title: fragen.meinestadt.de
+  dates: December 2011 - May 2012
+  description: "Q&A application created for popular german service. Application has been prepared to handle big traffic (up to 300 req/s)."
+  keywords:
+    - Ruby on Rails
+    - High availability
+    - Performance testing

@@ -1,20 +1,116 @@
 ---
 layout: default
 ---
+   <!-- Resume Section
+   ================================================== -->
+   <section class="slide" id="work">
 
-<div class="home">
+      <!-- Work -->
+      <div class="row work">
 
-  <h1>Posts</h1>
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+         <div class="nine columns main-col">
+            {% for project in site.data.projects %}
+               <div class="row item">
+                <div class="twelve columns">
+                  <h3>{{ project.name }}</h3>
+                  <p class="info">
+                    <a href="{{ project.link.href}}">{{ project.link.title }}</a>
+                    <span>&bull;</span> <em class="date">{{ project.dates }}</em>
+                    <p> {{ project.description }}</p>
+                    {% if project.keywords %}
+                      <h5>Project keywords</h5>
+                      <ul class="stats-tabs">
+                        {% for keyword in project.keywords %}
+                          <li>{{ keyword }}</li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                </div>
+                </div>
+            {% endfor %}
+         </div> <!-- main-col end -->
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      </div> <!-- End Work -->
 
-</div>
+   </section>
+
+   <section class="slide" id="skills">
+      <!-- Skills -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>I specialise in writing high quality Ruby (on Rails) applications.My ideal stack includes Ruby 2.x, plain ol’ Test::Unit and Postgres, however I don’t mind using other set of tools.
+            I also feel comfortable writing frontend Javascript code, although I prefer to use CoffeeScript.
+            </p>
+
+
+            <ul class="skills">
+              {% for skill in site.data.skills %}
+               <li><abbr title="{{ skill.description}}">{{ skill.name }}</abbr></li>
+               {% endfor %}
+            </ul>
+
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+   </section> <!-- Resume Section End-->
+   <section id="education" class="slide">
+    <!-- Education -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Silesian University of Technology</h3>
+                  <p class="info">Bachelor’s, Computer Science <span>&bull;</span> <em class="date">2009 - 2012</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+   </section>
+
+
+
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+            <div class="two columns header-col">
+              <h1><span>Get in touch.</span></h1>
+            </div>
+
+            <div class="ten columns">
+                  <h4>Michał Krzyżanowski</h4>
+                  <p class="address">
+                    email: <strong>michal.krzyzanowski@gmail.com</strong><br />
+                    github: <a href="http://github.com/krzyzak">github.com/krzyzak</a><br />
+                  </p>
+
+            </div>
+
+         </div>
+   </section> <!-- Contact Section End-->

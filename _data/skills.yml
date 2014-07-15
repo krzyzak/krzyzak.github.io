@@ -1,0 +1,27 @@
+-
+  name: Ruby
+  description: I’m eloquent Ruby programmer.
+-
+  name: Ruby on Rails
+  description: First contact with Rails 2.3.5.
+-
+  name: Javascript / CoffeeScript
+  description: Comfortable with frontend code. Basic experience with Node.js (along with socket.io library)
+-
+  name: Angular, Backbone, Marionette
+  description: Basic knowledge about Angular.js, familiar with Backbone &amp; Marionette
+-
+  name: PostgreSQL
+  description: Ability to write performant SQL queries. Good knowledge about PostGIS.
+-
+  name: NoSQL
+  description: I’ve got experience with using Redis and MongoDB
+-
+  name: HTML, Slim, HAML…
+  description: I prefer using Erb, although I’m able to use virtually any templating language
+-
+  name: CSS, Sass, Less…
+  description: I prefer using CSS without any preprocessors, although I don’t mind using any
+-
+  name: Git
+  description: Intermediate knowledge about git – I can keep clean and consistent history
